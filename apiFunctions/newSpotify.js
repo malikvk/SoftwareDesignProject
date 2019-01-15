@@ -2,13 +2,13 @@ const SpotifyWebApi = require('spotify-web-api-node');
 
 //create spotify Object
 var spotifyApi = new SpotifyWebApi({
-  clientId: 'ddcd96ccf0c04bd69f24be780c949650',
-  clientSecret: '1b8b8ca52b384c38808155ec3dc08c6e',
+  clientId: 'YOUR_ID',
+  clientSecret: 'YOUR_SECRET',
   redirectUri: 'http://localhost:8888/callback'
 });
 
 //set refresh token
-spotifyApi.setRefreshToken('AQAItMTx-bMrWpKo1Szrlw0EYb8OmXLdQNb54cuKcieVd0wLRVGF2q10Fywaj-pr5ZwmuKmRj8xSf5MMfog9UHdufcmXcVD9HCU_bAOBz-HTmpCR2Ki735Ae8wKuthaUJslH5Q');
+spotifyApi.setRefreshToken('REFRESH_TOKEN');
 
 //this function returns an artist's 'unique' ID and a Spotify link
 function findArtistIdAndLink(artistName, finalArray, callback) {
